@@ -14,6 +14,8 @@ protocol HeroViewModelProtocol {
         complete: @escaping ( ServiceResult<[HeroModel]?> ) -> Void )
     
     var heroes: [HeroModel] { get }
+    
+    var selectedHero: HeroModel {get}
 
     func getHeroComics(
         page: Int,
@@ -36,6 +38,12 @@ class HeroViewModel: HeroViewModelProtocol {
     var heroes: [HeroModel] {
         get { return heroList }
         set { heroList = newValue }
+    }
+    
+    private var currentHero = HeroModel(id: 0, name: "", thumbnail: ThumbnailModel(path: "", ext: ""), description: "")
+    var selectedHero: HeroModel {
+        get { return currentHero }
+        set { currentHero = newValue}
     }
 
     internal var comicList = [ComicModel]()

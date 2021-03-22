@@ -23,9 +23,12 @@
 		4E1039CC2608FE2B002EF4B5 /* MockNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E1039CB2608FE2B002EF4B5 /* MockNetwork.swift */; };
 		4E1039D826090414002EF4B5 /* comics.json in Resources */ = {isa = PBXBuildFile; fileRef = 4E1039D626090414002EF4B5 /* comics.json */; };
 		4E1039D926090414002EF4B5 /* characters.json in Resources */ = {isa = PBXBuildFile; fileRef = 4E1039D726090414002EF4B5 /* characters.json */; };
+		4E1039E126090AB8002EF4B5 /* ComicCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4E1039E026090AB8002EF4B5 /* ComicCell.xib */; };
+		4E1039E626090AD4002EF4B5 /* ComicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E1039E526090AD4002EF4B5 /* ComicViewController.swift */; };
+		4E1039F126090BB4002EF4B5 /* ComicCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E1039F026090BB4002EF4B5 /* ComicCell.swift */; };
 		4EE146CF2608B0E800CFA276 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EE146CE2608B0E800CFA276 /* AppDelegate.swift */; };
 		4EE146D12608B0E800CFA276 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EE146D02608B0E800CFA276 /* SceneDelegate.swift */; };
-		4EE146D32608B0E800CFA276 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EE146D22608B0E800CFA276 /* ViewController.swift */; };
+		4EE146D32608B0E800CFA276 /* HeroesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EE146D22608B0E800CFA276 /* HeroesViewController.swift */; };
 		4EE146D62608B0E800CFA276 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4EE146D42608B0E800CFA276 /* Main.storyboard */; };
 		4EE146D82608B0EA00CFA276 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4EE146D72608B0EA00CFA276 /* Assets.xcassets */; };
 		4EE146DB2608B0EA00CFA276 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4EE146D92608B0EA00CFA276 /* LaunchScreen.storyboard */; };
@@ -75,10 +78,13 @@
 		4E1039CB2608FE2B002EF4B5 /* MockNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockNetwork.swift; sourceTree = "<group>"; };
 		4E1039D626090414002EF4B5 /* comics.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = comics.json; sourceTree = "<group>"; };
 		4E1039D726090414002EF4B5 /* characters.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = characters.json; sourceTree = "<group>"; };
+		4E1039E026090AB8002EF4B5 /* ComicCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ComicCell.xib; sourceTree = "<group>"; };
+		4E1039E526090AD4002EF4B5 /* ComicViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComicViewController.swift; sourceTree = "<group>"; };
+		4E1039F026090BB4002EF4B5 /* ComicCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComicCell.swift; sourceTree = "<group>"; };
 		4EE146CB2608B0E800CFA276 /* Marvel Heroes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Marvel Heroes.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4EE146CE2608B0E800CFA276 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4EE146D02608B0E800CFA276 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		4EE146D22608B0E800CFA276 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4EE146D22608B0E800CFA276 /* HeroesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroesViewController.swift; sourceTree = "<group>"; };
 		4EE146D52608B0E800CFA276 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4EE146D72608B0EA00CFA276 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4EE146DA2608B0EA00CFA276 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -182,6 +188,8 @@
 			children = (
 				4E1039AD2608EE1B002EF4B5 /* HeroCell.xib */,
 				4E1039B32608EE59002EF4B5 /* HeroCell.swift */,
+				4E1039E026090AB8002EF4B5 /* ComicCell.xib */,
+				4E1039F026090BB4002EF4B5 /* ComicCell.swift */,
 			);
 			path = cells;
 			sourceTree = "<group>";
@@ -204,6 +212,15 @@
 				4E1039CB2608FE2B002EF4B5 /* MockNetwork.swift */,
 			);
 			path = service;
+			sourceTree = "<group>";
+		};
+		4E1039F826090CEB002EF4B5 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				4E1039E526090AD4002EF4B5 /* ComicViewController.swift */,
+				4EE146D22608B0E800CFA276 /* HeroesViewController.swift */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 		4EE146C22608B0E800CFA276 = {
@@ -238,7 +255,7 @@
 				4E1039622608B611002EF4B5 /* Service */,
 				4EE146CE2608B0E800CFA276 /* AppDelegate.swift */,
 				4EE146D02608B0E800CFA276 /* SceneDelegate.swift */,
-				4EE146D22608B0E800CFA276 /* ViewController.swift */,
+				4E1039F826090CEB002EF4B5 /* ViewControllers */,
 				4EE146D72608B0EA00CFA276 /* Assets.xcassets */,
 				4EE146DC2608B0EA00CFA276 /* Info.plist */,
 			);
@@ -398,6 +415,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4EE146DB2608B0EA00CFA276 /* LaunchScreen.storyboard in Resources */,
+				4E1039E126090AB8002EF4B5 /* ComicCell.xib in Resources */,
 				4EE146D82608B0EA00CFA276 /* Assets.xcassets in Resources */,
 				4EE146D62608B0E800CFA276 /* Main.storyboard in Resources */,
 				4E1039AE2608EE1B002EF4B5 /* HeroCell.xib in Resources */,
@@ -550,11 +568,13 @@
 				4E1039762608B838002EF4B5 /* AlamofireWrapper.swift in Sources */,
 				4E1039B42608EE59002EF4B5 /* HeroCell.swift in Sources */,
 				4E1039A12608E737002EF4B5 /* HeroViewModel.swift in Sources */,
-				4EE146D32608B0E800CFA276 /* ViewController.swift in Sources */,
+				4EE146D32608B0E800CFA276 /* HeroesViewController.swift in Sources */,
+				4E1039E626090AD4002EF4B5 /* ComicViewController.swift in Sources */,
 				4E10397F2608C72C002EF4B5 /* StringExt.swift in Sources */,
 				4EE146CF2608B0E800CFA276 /* AppDelegate.swift in Sources */,
 				4E1039712608B6CB002EF4B5 /* AlamofireProtocol.swift in Sources */,
 				4E10396C2608B69E002EF4B5 /* NetworkProtocol.swift in Sources */,
+				4E1039F126090BB4002EF4B5 /* ComicCell.swift in Sources */,
 				4E1039642608B66D002EF4B5 /* NetworkService.swift in Sources */,
 				4EE146D12608B0E800CFA276 /* SceneDelegate.swift in Sources */,
 				4E1039852608CB30002EF4B5 /* Constants.swift in Sources */,
