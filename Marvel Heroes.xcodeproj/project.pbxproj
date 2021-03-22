@@ -15,6 +15,9 @@
 		4EE146DB2608B0EA00CFA276 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4EE146D92608B0EA00CFA276 /* LaunchScreen.storyboard */; };
 		4EE146E62608B0EA00CFA276 /* Marvel_HeroesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EE146E52608B0EA00CFA276 /* Marvel_HeroesTests.swift */; };
 		4EE146F12608B0EA00CFA276 /* Marvel_HeroesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EE146F02608B0EA00CFA276 /* Marvel_HeroesUITests.swift */; };
+		9DE468645C78121855C111A8 /* Pods_Marvel_HeroesTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6800E21DFAFBB040D4BC0A30 /* Pods_Marvel_HeroesTests.framework */; };
+		AF42D23058F08892060A2F77 /* Pods_Marvel_Heroes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 195B348DD61BD11FEF622FF9 /* Pods_Marvel_Heroes.framework */; };
+		B35A50C14F329335AFBD4E6A /* Pods_Marvel_Heroes_Marvel_HeroesUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66F83187BC15B23FAA0A8F74 /* Pods_Marvel_Heroes_Marvel_HeroesUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +38,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		170F471E2D1FFED53A5C43E7 /* Pods-Marvel Heroes.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Marvel Heroes.debug.xcconfig"; path = "Target Support Files/Pods-Marvel Heroes/Pods-Marvel Heroes.debug.xcconfig"; sourceTree = "<group>"; };
+		195B348DD61BD11FEF622FF9 /* Pods_Marvel_Heroes.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Marvel_Heroes.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		28753CCD0DB1136132B54863 /* Pods-Marvel Heroes-Marvel HeroesUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Marvel Heroes-Marvel HeroesUITests.release.xcconfig"; path = "Target Support Files/Pods-Marvel Heroes-Marvel HeroesUITests/Pods-Marvel Heroes-Marvel HeroesUITests.release.xcconfig"; sourceTree = "<group>"; };
+		2B46D9D09812A12FF662CAE0 /* Pods-Marvel Heroes.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Marvel Heroes.release.xcconfig"; path = "Target Support Files/Pods-Marvel Heroes/Pods-Marvel Heroes.release.xcconfig"; sourceTree = "<group>"; };
+		4978A31FB2E33A92848D1ACA /* Pods-Marvel HeroesTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Marvel HeroesTests.debug.xcconfig"; path = "Target Support Files/Pods-Marvel HeroesTests/Pods-Marvel HeroesTests.debug.xcconfig"; sourceTree = "<group>"; };
 		4EE146CB2608B0E800CFA276 /* Marvel Heroes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Marvel Heroes.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4EE146CE2608B0E800CFA276 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4EE146D02608B0E800CFA276 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +57,10 @@
 		4EE146EC2608B0EA00CFA276 /* Marvel HeroesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Marvel HeroesUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4EE146F02608B0EA00CFA276 /* Marvel_HeroesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Marvel_HeroesUITests.swift; sourceTree = "<group>"; };
 		4EE146F22608B0EA00CFA276 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		571A57618F75DC6D5C3470C8 /* Pods-Marvel HeroesTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Marvel HeroesTests.release.xcconfig"; path = "Target Support Files/Pods-Marvel HeroesTests/Pods-Marvel HeroesTests.release.xcconfig"; sourceTree = "<group>"; };
+		66F83187BC15B23FAA0A8F74 /* Pods_Marvel_Heroes_Marvel_HeroesUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Marvel_Heroes_Marvel_HeroesUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6800E21DFAFBB040D4BC0A30 /* Pods_Marvel_HeroesTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Marvel_HeroesTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		996E6239960F3B0F9AE21F11 /* Pods-Marvel Heroes-Marvel HeroesUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Marvel Heroes-Marvel HeroesUITests.debug.xcconfig"; path = "Target Support Files/Pods-Marvel Heroes-Marvel HeroesUITests/Pods-Marvel Heroes-Marvel HeroesUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF42D23058F08892060A2F77 /* Pods_Marvel_Heroes.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9DE468645C78121855C111A8 /* Pods_Marvel_HeroesTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,6 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B35A50C14F329335AFBD4E6A /* Pods_Marvel_Heroes_Marvel_HeroesUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +98,8 @@
 				4EE146E42608B0EA00CFA276 /* Marvel HeroesTests */,
 				4EE146EF2608B0EA00CFA276 /* Marvel HeroesUITests */,
 				4EE146CC2608B0E800CFA276 /* Products */,
+				813D7FE8CEF51E53F0618AEA /* Pods */,
+				7D0646F0B6765D92445B2DDC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -128,6 +145,30 @@
 			path = "Marvel HeroesUITests";
 			sourceTree = "<group>";
 		};
+		7D0646F0B6765D92445B2DDC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				195B348DD61BD11FEF622FF9 /* Pods_Marvel_Heroes.framework */,
+				66F83187BC15B23FAA0A8F74 /* Pods_Marvel_Heroes_Marvel_HeroesUITests.framework */,
+				6800E21DFAFBB040D4BC0A30 /* Pods_Marvel_HeroesTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		813D7FE8CEF51E53F0618AEA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				170F471E2D1FFED53A5C43E7 /* Pods-Marvel Heroes.debug.xcconfig */,
+				2B46D9D09812A12FF662CAE0 /* Pods-Marvel Heroes.release.xcconfig */,
+				996E6239960F3B0F9AE21F11 /* Pods-Marvel Heroes-Marvel HeroesUITests.debug.xcconfig */,
+				28753CCD0DB1136132B54863 /* Pods-Marvel Heroes-Marvel HeroesUITests.release.xcconfig */,
+				4978A31FB2E33A92848D1ACA /* Pods-Marvel HeroesTests.debug.xcconfig */,
+				571A57618F75DC6D5C3470C8 /* Pods-Marvel HeroesTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +176,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4EE146F52608B0EA00CFA276 /* Build configuration list for PBXNativeTarget "Marvel Heroes" */;
 			buildPhases = (
+				3440A2B6E9FE0F1465DE9628 /* [CP] Check Pods Manifest.lock */,
 				4EE146C72608B0E800CFA276 /* Sources */,
 				4EE146C82608B0E800CFA276 /* Frameworks */,
 				4EE146C92608B0E800CFA276 /* Resources */,
+				F66F24D72EDB842BE5271312 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -152,9 +195,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4EE146F82608B0EA00CFA276 /* Build configuration list for PBXNativeTarget "Marvel HeroesTests" */;
 			buildPhases = (
+				9C5F9AD5AB44ED5595CB1FA7 /* [CP] Check Pods Manifest.lock */,
 				4EE146DD2608B0EA00CFA276 /* Sources */,
 				4EE146DE2608B0EA00CFA276 /* Frameworks */,
 				4EE146DF2608B0EA00CFA276 /* Resources */,
+				F8ECD9C89ACDE0B2836C8748 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -170,9 +215,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4EE146FB2608B0EA00CFA276 /* Build configuration list for PBXNativeTarget "Marvel HeroesUITests" */;
 			buildPhases = (
+				654054D36BE7A9158B2CD261 /* [CP] Check Pods Manifest.lock */,
 				4EE146E82608B0EA00CFA276 /* Sources */,
 				4EE146E92608B0EA00CFA276 /* Frameworks */,
 				4EE146EA2608B0EA00CFA276 /* Resources */,
+				8DD2AFD92BE593CE4190E81D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -252,6 +299,126 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3440A2B6E9FE0F1465DE9628 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Marvel Heroes-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		654054D36BE7A9158B2CD261 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Marvel Heroes-Marvel HeroesUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8DD2AFD92BE593CE4190E81D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Marvel Heroes-Marvel HeroesUITests/Pods-Marvel Heroes-Marvel HeroesUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Marvel Heroes-Marvel HeroesUITests/Pods-Marvel Heroes-Marvel HeroesUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Marvel Heroes-Marvel HeroesUITests/Pods-Marvel Heroes-Marvel HeroesUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9C5F9AD5AB44ED5595CB1FA7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Marvel HeroesTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F66F24D72EDB842BE5271312 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Marvel Heroes/Pods-Marvel Heroes-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Marvel Heroes/Pods-Marvel Heroes-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Marvel Heroes/Pods-Marvel Heroes-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F8ECD9C89ACDE0B2836C8748 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Marvel HeroesTests/Pods-Marvel HeroesTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Marvel HeroesTests/Pods-Marvel HeroesTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Marvel HeroesTests/Pods-Marvel HeroesTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		4EE146C72608B0E800CFA276 /* Sources */ = {
@@ -433,6 +600,7 @@
 		};
 		4EE146F62608B0EA00CFA276 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 170F471E2D1FFED53A5C43E7 /* Pods-Marvel Heroes.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -452,6 +620,7 @@
 		};
 		4EE146F72608B0EA00CFA276 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2B46D9D09812A12FF662CAE0 /* Pods-Marvel Heroes.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -471,6 +640,7 @@
 		};
 		4EE146F92608B0EA00CFA276 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4978A31FB2E33A92848D1ACA /* Pods-Marvel HeroesTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -493,6 +663,7 @@
 		};
 		4EE146FA2608B0EA00CFA276 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 571A57618F75DC6D5C3470C8 /* Pods-Marvel HeroesTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -515,6 +686,7 @@
 		};
 		4EE146FC2608B0EA00CFA276 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 996E6239960F3B0F9AE21F11 /* Pods-Marvel Heroes-Marvel HeroesUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -535,6 +707,7 @@
 		};
 		4EE146FD2608B0EA00CFA276 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 28753CCD0DB1136132B54863 /* Pods-Marvel Heroes-Marvel HeroesUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
