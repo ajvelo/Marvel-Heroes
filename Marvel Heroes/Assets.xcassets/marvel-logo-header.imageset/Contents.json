@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "marvel-logo-header.jpeg",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
