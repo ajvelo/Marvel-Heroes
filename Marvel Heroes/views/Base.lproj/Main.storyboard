@@ -67,7 +67,7 @@
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="dJI-E6-9VJ">
                                 <rect key="frame" x="0.0" y="400" width="414" height="462"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="backgroundColor" systemColor="systemRedColor"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="tEm-vY-puB">
                                     <size key="itemSize" width="128" height="128"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -92,20 +92,20 @@
                                     <constraint firstAttribute="width" constant="200" id="XHL-1O-dmf"/>
                                 </constraints>
                             </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rPk-Mc-UWL">
-                                <rect key="frame" x="52" y="284" width="330" height="100"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rPk-Mc-UWL">
+                                <rect key="frame" x="16" y="284" width="382" height="100"/>
+                                <color key="backgroundColor" systemColor="systemRedColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="48l-XO-nkw"/>
                                 </constraints>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
-                                <color key="textColor" systemColor="labelColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="16"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Lgn-R4-ldH"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" systemColor="systemRedColor"/>
                         <constraints>
                             <constraint firstItem="dJI-E6-9VJ" firstAttribute="leading" secondItem="Lgn-R4-ldH" secondAttribute="leading" id="5gU-Q9-Yxl"/>
                             <constraint firstItem="xag-Oj-OTS" firstAttribute="centerX" secondItem="g3l-6A-QRm" secondAttribute="centerX" id="6rw-Ii-ALg"/>
@@ -113,9 +113,9 @@
                             <constraint firstItem="dJI-E6-9VJ" firstAttribute="top" secondItem="rPk-Mc-UWL" secondAttribute="bottom" constant="16" id="LEk-10-4Gh"/>
                             <constraint firstItem="rPk-Mc-UWL" firstAttribute="top" secondItem="xag-Oj-OTS" secondAttribute="bottom" constant="24" id="NZQ-1y-Gft"/>
                             <constraint firstItem="dJI-E6-9VJ" firstAttribute="trailing" secondItem="Lgn-R4-ldH" secondAttribute="trailing" id="d6h-z7-LVa"/>
-                            <constraint firstItem="rPk-Mc-UWL" firstAttribute="leading" secondItem="Lgn-R4-ldH" secondAttribute="leading" constant="52" id="dNm-SW-iJv"/>
+                            <constraint firstItem="rPk-Mc-UWL" firstAttribute="leading" secondItem="Lgn-R4-ldH" secondAttribute="leading" constant="16" id="dNm-SW-iJv"/>
                             <constraint firstItem="xag-Oj-OTS" firstAttribute="top" secondItem="Lgn-R4-ldH" secondAttribute="top" constant="16" id="lbg-hf-hab"/>
-                            <constraint firstItem="Lgn-R4-ldH" firstAttribute="trailing" secondItem="rPk-Mc-UWL" secondAttribute="trailing" constant="32" id="tnX-tJ-STD"/>
+                            <constraint firstItem="Lgn-R4-ldH" firstAttribute="trailing" secondItem="rPk-Mc-UWL" secondAttribute="trailing" constant="16" id="tnX-tJ-STD"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="yiU-nH-ME4"/>
@@ -149,12 +149,6 @@
         </scene>
     </scenes>
     <resources>
-        <systemColor name="labelColor">
-            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
         <systemColor name="systemRedColor">
             <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
