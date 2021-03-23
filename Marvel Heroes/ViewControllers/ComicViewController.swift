@@ -17,6 +17,7 @@ class ComicViewController: UIViewController {
     var selectedHero: HeroModel?
     var heroes: HeroViewModelProtocol?
     fileprivate var currentPage = 0
+    fileprivate var isLoadingList : Bool = false
     
     convenience init(heroes: HeroViewModelProtocol, selectedHero: HeroModel) {
         self.init()
@@ -34,22 +35,33 @@ class ComicViewController: UIViewController {
         if let currentHero = selectedHero {
             displayHero(description: currentHero.description, image: currentHero.thumbnail.fullName)
         }
-    }
-    
-    override func viewWillAppear(_ animated: Bool) {
         fetchComicsForHero(page: currentPage, heroId: 1)
     }
     
     func fetchComicsForHero(page: Int, heroId: Int) {
+        isLoadingList = true
         guard let heroId = selectedHero?.id else { return }
         heroes?.getHeroComics(page: currentPage, heroId: heroId, complete: { [weak self] (result) in
+            self?.isLoadingList = false
             switch result {
             case .Success(_, _):
                 self?.collectionView.reloadData()
             case .Error(let message, let statusCode):
-                print("Error \(message) \(statusCode ?? 0)")
+                if let alert = self?.handleError(heroId: heroId, message: message, statusCode:  String(statusCode ?? 0)) {
+                    self?.present(alert, animated: true, completion: nil)
+                }
             }
         })
+    }
+    
+    func handleError(heroId: Int, message: String, statusCode: String) -> UIAlertController {
+        let alert = UIAlertController(title: "No internet connection - status code \(statusCode)", message: message, preferredStyle: .alert)
+        
+        let action = UIAlertAction(title: "Retry", style: .default) { (action) in
+            self.fetchComicsForHero(page: self.currentPage, heroId: heroId)
+        }
+        alert.addAction(action)
+        return alert
     }
     
     func displayHero(description: String, image: String) {
@@ -85,12 +97,10 @@ extension ComicViewController: UICollectionViewDelegate, UICollectionViewDataSou
     }
 
     func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
-        if let comicList = heroes?.comicList {
+        if (((collectionView.contentOffset.y + collectionView.frame.size.height) > collectionView.contentSize.height ) && !isLoadingList) {
             guard let heroId = selectedHero?.id else { return }
-            if (indexPath.row == comicList.count - 1 ) {
-                currentPage += 1
-                fetchComicsForHero(page: currentPage, heroId: heroId)
-             }
+            currentPage += 1
+            fetchComicsForHero(page: currentPage, heroId: heroId)
         }
     }
 }

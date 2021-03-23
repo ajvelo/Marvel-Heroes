@@ -15,6 +15,7 @@ class HeroesViewController: UIViewController {
     fileprivate var heroes = HeroViewModel()
     fileprivate var currentPage = 0
     fileprivate var selectedHero: HeroViewModel?
+    fileprivate var isLoadingList = false
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,24 +24,36 @@ class HeroesViewController: UIViewController {
         collectionView.dataSource = self
         self.collectionView.register(UINib(nibName: "HeroCell", bundle: nil), forCellWithReuseIdentifier: "heroCell")
         self.title = "Marvel Heroes"
-
-    }
-    
-    override func viewWillAppear(_ animated: Bool) {
         fetchHeroes(page: currentPage)
     }
     
     func fetchHeroes(page: Int) {
+        isLoadingList = true
         heroes.networkService = NetworkService.shared
         heroes.getHeroes(page: page) { [weak self] (result) in
+            self?.isLoadingList = false
             switch result {
             case .Success(_, _):
                 self?.collectionView.reloadData()
             case .Error(let message, let statusCode):
-                print("Error \(message) \(statusCode ?? 0)")
+                if let alert = self?.handleError(message: message, statusCode:  String(statusCode ?? 0)) {
+                    self?.present(alert, animated: true, completion: nil)
+                }
+
+                
             }
         }
         
+    }
+    
+    func handleError(message: String, statusCode: String) -> UIAlertController {
+        let alert = UIAlertController(title: "No internet connection - status code \(statusCode)", message: message, preferredStyle: .alert)
+        
+        let action = UIAlertAction(title: "Retry", style: .default) { (action) in
+            self.fetchHeroes(page: self.currentPage)
+        }
+        alert.addAction(action)
+        return alert
     }
 }
 
@@ -72,9 +85,9 @@ extension HeroesViewController: UICollectionViewDelegate, UICollectionViewDataSo
     }
     
     func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
-        if (indexPath.row == heroes.heroes.count - 1 ) {
+        if (((collectionView.contentOffset.y + collectionView.frame.size.height) > collectionView.contentSize.height ) && !isLoadingList) {
             currentPage += 1
             fetchHeroes(page: currentPage)
-         }
+        }
     }
 }
