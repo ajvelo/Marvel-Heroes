@@ -72,7 +72,7 @@ extension HeroesViewController: UICollectionViewDelegate, UICollectionViewDataSo
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        if heroes.heroes.count < 0 {
+        if heroes.heroes.count > 0 {
             heroes.selectedHero = heroes.heroes[indexPath.row]
             let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
             let comicsViewController = storyBoard.instantiateViewController(withIdentifier: "comicsvc") as! ComicViewController
