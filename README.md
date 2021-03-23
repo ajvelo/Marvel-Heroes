@@ -6,7 +6,7 @@
 <br />
 <p align="center">
   <a href="https://github.com/ajvelo/Marvel-Heroes">
-  <img src="images/ios.mov" width="200" height="400" />
+  <img src="images/heroes.png" alt="Heroes" width="200" height="400">
   </a>
 
   <h3 align="center">Marvel Heroes</h3>
