@@ -16,8 +16,8 @@ class ComicViewController: UIViewController {
     
     var selectedHero: HeroModel?
     var heroes: HeroViewModelProtocol?
-    fileprivate var currentPage = 0
-    fileprivate var isLoadingList : Bool = false
+    var currentPage = 0
+    var isLoadingList : Bool = false
     
     convenience init(heroes: HeroViewModelProtocol, selectedHero: HeroModel) {
         self.init()

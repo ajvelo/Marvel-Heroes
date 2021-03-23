@@ -9,7 +9,7 @@ import Foundation
 
 @testable import Marvel_Heroes
 
-class MockMarvelHeroesViewModel: HeroViewModelProtocol {
+class MockHeroViewModel: HeroViewModelProtocol {
     var selectedHero: HeroModel = HeroModel(id: 0, name: "Spider-Man", thumbnail: ThumbnailModel(path: "", ext: ""), description: "test description")
     
     func getHeroes(page: Int, complete: @escaping (ServiceResult<[HeroModel]?>) -> Void) {

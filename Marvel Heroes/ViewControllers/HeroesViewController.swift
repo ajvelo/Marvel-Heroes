@@ -12,14 +12,15 @@ class HeroesViewController: UIViewController {
     
     @IBOutlet weak var collectionView: UICollectionView!
     
-    fileprivate var heroes = HeroViewModel()
-    fileprivate var currentPage = 0
+    var heroes = HeroViewModel()
+    var currentPage = 0
+    var isLoadingList = false
     fileprivate var selectedHero: HeroViewModel?
-    fileprivate var isLoadingList = false
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        heroes.networkService = NetworkService.shared
         collectionView.delegate = self
         collectionView.dataSource = self
         self.collectionView.register(UINib(nibName: "HeroCell", bundle: nil), forCellWithReuseIdentifier: "heroCell")
@@ -29,7 +30,6 @@ class HeroesViewController: UIViewController {
     
     func fetchHeroes(page: Int) {
         isLoadingList = true
-        heroes.networkService = NetworkService.shared
         heroes.getHeroes(page: page) { [weak self] (result) in
             self?.isLoadingList = false
             switch result {
@@ -72,12 +72,14 @@ extension HeroesViewController: UICollectionViewDelegate, UICollectionViewDataSo
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        heroes.selectedHero = heroes.heroes[indexPath.row]
-        let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-        let comicsViewController = storyBoard.instantiateViewController(withIdentifier: "comicsvc") as! ComicViewController
-        comicsViewController.heroes = self.heroes
-        comicsViewController.selectedHero = heroes.selectedHero
-        self.navigationController?.pushViewController(comicsViewController, animated: true)
+        if heroes.heroes.count < 0 {
+            heroes.selectedHero = heroes.heroes[indexPath.row]
+            let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+            let comicsViewController = storyBoard.instantiateViewController(withIdentifier: "comicsvc") as! ComicViewController
+            comicsViewController.heroes = self.heroes
+            comicsViewController.selectedHero = heroes.selectedHero
+            self.navigationController?.pushViewController(comicsViewController, animated: true)
+        }
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
